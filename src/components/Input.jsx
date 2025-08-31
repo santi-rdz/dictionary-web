@@ -13,7 +13,11 @@ export default function Input({ word, onSetWord, isInvalid, handleSubmit }) {
           } bg-7 w-full dark:placeholder:text-white/40 dark:bg-2 dark:text-white txt-3 rounded-xl p-4 font-bold text-3 placeholder:text-3/20 placeholder:font-bold`}
           placeholder="Search for any word..."
         />
-        <img src={searchIcon} className="absolute top-1/2 -translate-y-1/2 right-4" />
+        <img
+          src={searchIcon}
+          onClick={handleSubmit}
+          className="cursor-pointer absolute top-1/2 -translate-y-1/2 right-4"
+        />
       </form>
       <p className={`text-10 txt-4 mt-1 ${isInvalid ? "opacity-100" : "opacity-0"}`}>Whoops, can't be empty...</p>
     </>
