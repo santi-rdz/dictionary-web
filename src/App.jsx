@@ -23,7 +23,7 @@ function App() {
 
     setError(false);
     setIsLoading(true);
-    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word.toLocaleLowerCase()}`)
       .then(async (res) => {
         if (!res.ok) {
           const errorM = await res.json();
