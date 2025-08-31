@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "inconsolata";
+  src: url("assets/fonts/inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+  font-family: "inter";
+  src: url("assets/fonts/inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+  font-family: "lora";
+  src: url("assets/fonts/lora/Lora-VariableFont_wght.ttf");
+}
+
+@theme {
+  --font-incon: "inconsolata";
+  --font-inter: "inter";
+  --font-lora: "lora";
+  --color-1: #050505;
+  --color-2: #1f1f1f;
+  --color-3: #2d2d2d;
+  --color-4: #3a3a3a;
+  --color-5: #757575;
+  --color-6: #e9e9e9;
+  --color-7: #f4f4f4;
+  --color-8: #ffffff;
+  --color-9: #a445ed;
+  --color-10: #ff5252;
+}
+
+@utility txt-1 {
+  font-size: clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
+}
+@utility txt-2 {
+  font-size: clamp(1.125rem, 0.993rem + 0.5634vw, 1.5rem);
+}
+@utility txt-3 {
+  font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+}
+@utility txt-4 {
+  font-size: clamp(0.9375rem, 0.8715rem + 0.2817vw, 1.125rem);
+}
+
+@utility my-container {
+  width: min(90%, 60rem);
+  margin-inline: auto;
+}
