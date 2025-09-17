@@ -1,1 +1,1 @@
-## (Live view)[https://rdz-dictionary-react.netlify.app/]
+### [Live View](https://rdz-dictionary-react.netlify.app/)
